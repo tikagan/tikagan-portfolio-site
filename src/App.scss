@@ -1,5 +1,9 @@
+html {
+  background-color: salmon;
+}
+
 .App {
-  text-align: center;
+  width: 100vw;
 }
 
 .App-logo {
@@ -7,32 +11,49 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content {
+  margin: 5em 2em;
+  padding: 0 2em;
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  font-size: calc(10px + 2vmin);
 }
 
-.App-link {
-  color: #61dafb;
+.kritika-portrait {
+  width: 10em;
+  height: 10em;
+  background-image: url("/assets/IntersectTO_67.jpg");
+  background-size: cover;
+  display: block;
+  border-radius: 10em;
+  margin-right: 5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.about-me-text {
+  margin: 1em 2em;
+  font-family: 'MuktaRegular';
+}
+
+
+@media (width < 930px) {
+  .content {
+    flex-flow: column;
+
   }
-  to {
-    transform: rotate(360deg);
+
+  .kritika-portrait {
+    margin: 0;
   }
+
+  .hi-im-kritika {
+    text-align: center;
+  }
+
+  .about-me-text {
+    margin: 0;
+  }
+  
 }
