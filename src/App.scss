@@ -3,21 +3,21 @@ html {
 }
 
 .App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   width: 100vw;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.content {
-  margin: 5em 2em;
-  padding: 0 2em;
+.content-container {
+  margin: 4em 4em 0 4em;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
+  align-content: flex-start;
+  flex-grow: 1;
   color: white;
   font-size: calc(10px + 2vmin);
 }
@@ -29,7 +29,11 @@ html {
   background-size: cover;
   display: block;
   border-radius: 10em;
-  margin-right: 5em;
+  margin-right: 3em;
+}
+
+.hi-im-kritika {
+  margin-right: 2em;
 }
 
 .about-me-text {
@@ -37,9 +41,26 @@ html {
   font-family: 'MuktaRegular';
 }
 
+.footer {
+  flex-shrink: 0;
+}
+
+.contact-icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2em 0;
+
+}
+
+.contact-link {
+  fill: #ffffff;
+  height: 1em;
+  margin: 0 1em;
+}
 
 @media (width < 930px) {
-  .content {
+  .content-container {
     flex-flow: column;
 
   }
@@ -50,10 +71,10 @@ html {
 
   .hi-im-kritika {
     text-align: center;
+    margin: 0;
   }
 
   .about-me-text {
     margin: 0;
   }
-  
 }
