@@ -1,24 +1,47 @@
 body {
   margin: 0;
-  font-family: 'GotuRegular';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
-  font-family: "GotuRegular";
+  font-family: "Gotu Regular";
   src: local("GotuRegular"),
     url("./assets/fonts/Gotu-Regular.ttf") format("truetype");
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "MuktaRegular";
+  font-family: "Mukta Regular";
   src: local("MuktaRegular"),
     url("./assets/fonts/Mukta-Regular.ttf") format("truetype");
   font-weight: normal;
 }
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
+
+@font-face {
+  font-family: "Painter Umesh 1";
+  src: local("Painter Umesh 1"),
+    url("./assets/fonts/Painter\ Umesh\ 1.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Painter Umesh 2";
+  src: local("Painter Umesh 2"),
+    url("./assets/fonts/Painter\ Umesh\ 2.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Painter Umesh 3";
+  src: local("Painter Umesh 3"),
+    url("./assets/fonts/Painter\ Umesh\ 3.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Painter Umesh 4";
+  src: local("Painter Umesh 4"),
+    url("./assets/fonts/Painter\ Umesh\ 4.ttf") format("truetype");
+  font-weight: normal;
+}
