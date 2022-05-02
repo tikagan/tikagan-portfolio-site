@@ -1,0 +1,61 @@
+html {
+    background-color: salmon;
+  }
+
+.App {
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+width: 100vw;
+font-family: 'Mukta-Regular';
+}
+
+.content-container {
+  margin: 4em 4em 0 4em;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: flex-start;
+  flex-grow: 1;
+  color: var(--colour-text-white);
+  font-size: calc(10px + 2vmin);
+}
+
+.kritika-portrait {
+  width: 10em;
+  height: 10em;
+  background-image: url("/assets/IntersectTO_67.jpg");
+  background-size: cover;
+  display: block;
+  border-radius: 10em;
+  margin-right: 3em;
+}
+
+.hi-im-kritika {
+  margin-right: 2em;
+  font-family: 'Gotu Regular';
+}
+
+.about-me-text {
+  margin: 1em 2em 1em 3em;
+}
+
+@media (width < 930px) {
+  .content-container {
+    flex-flow: column;
+  }
+
+  .kritika-portrait {
+    margin: 0;
+  }
+
+  .hi-im-kritika {
+    text-align: center;
+    margin: 0;
+  }
+
+  .about-me-text {
+    margin: 0 0 .75em 0;
+  }
+}

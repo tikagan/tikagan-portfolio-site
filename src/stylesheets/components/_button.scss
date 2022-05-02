@@ -1,0 +1,52 @@
+@use '../abstracts' as *;
+
+.button {
+    background-color: white;
+    padding: .25em;
+    width: 12em;
+    height: 5em;
+    border-radius: .5em;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .button-text {
+    max-width: 600px;
+    position: absolute;
+    font-weight: normal;
+    font-size: 4em;
+    left: 50%;
+    transform: translateX(-50%); 
+    @include lineHeightCrop(1.3); //line-height: 1.3
+  }
+  
+  $painterumesh1: #F3FF75;
+  $painterumesh2: #A4B30C;
+  $painterumesh3: #725CFF;
+  $painterumesh4: #3826B3; 
+  
+  .painter-umesh-1 {
+    font-family: 'Painter Umesh 1';
+    color: $painterumesh1;
+  }
+  
+  .painter-umesh-2 {
+    content: attr(button-text);
+    font-family: 'Painter Umesh 2';
+    color: $painterumesh2;
+  }
+  
+  .painter-umesh-3{
+    content: attr(button-text);
+    font-family: 'Painter Umesh 3';
+    color: $painterumesh3;
+  }
+  
+  .painter-umesh-4 {
+    content: attr(button-text);
+    font-family: 'Painter Umesh 4';
+    color: $painterumesh4;
+  }

@@ -1,0 +1,7 @@
+@mixin lineHeightCrop($line-height) {
+    &::after {
+      content: '';
+      display: block;
+      margin-bottom: calc((1 - #{$line-height}) * 0.5em);
+    }
+  }

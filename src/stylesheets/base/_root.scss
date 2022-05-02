@@ -1,0 +1,9 @@
+@use '../abstracts' as *;
+
+:root {
+    @each $colour-type, $colour-type-list in $colours {
+        @each $colour-name, $value in $colour-type-list {
+          --colour-#{$colour-type}-#{$colour-name}: #{$value};
+        }
+      }
+}
