@@ -1,8 +1,6 @@
-import './App.scss';
-import {ReactComponent as GithubLogo} from './assets/GitHub-Mark.svg'
-import {ReactComponent as LinkedinLogo} from './assets/LinkedIn_Logo.svg'
-import {ReactComponent as Email} from './assets/Envelope.svg'
-import Button from './Button'
+import './stylesheets/App.scss';
+import Button from './components/Button'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -15,19 +13,7 @@ function App() {
         </p>
           <Button buttonText='Excellent'/>
       </div>
-      <footer>
-        <nav className='contact-icons-container'>
-          <a href='https://github.com/tikagan'>
-            <GithubLogo />
-          </a>
-          <a href='https://www.linkedin.com/in/kritika-ganapathy-61893014b/'>
-            <LinkedinLogo />
-          </a>
-          <a href='mailto:ganapathy.kritika@gmail.com'>
-            <Email />
-          </a>
-        </nav>
-      </footer>
+      < Footer />
     </div>
   );
 }
