@@ -1,3 +1,7 @@
+@use 'sass:string';
+@use 'sass:color';
+@use 'sass:math';
+
 @mixin lineHeightCrop($line-height) {
     &::after {
       content: '';
@@ -5,3 +9,61 @@
       margin-bottom: calc((1 - #{$line-height}) * 0.5em);
     }
   }
+
+@mixin colour-contrast($string, $boolean) {
+ 
+  @if (string.quote($string) == "colour") and $boolean {
+    color: white;
+  }
+
+  @else if string.quote($string) == "colour" {
+    color: black;
+  }
+
+  @else if (string.quote($string) == "fill") and $boolean {
+    fill: white;
+  }
+
+  @else if string.quote($string) == "fill" {
+    fill: black;
+  }
+};
+
+@mixin button-text-colour-contrast($number, $boolean){
+  
+  @if (string.quote($number) == "1") and $boolean {
+    color: hsl(0, 0%, 90%);
+  }
+
+  @else if (string.quote($number) == "2") and $boolean {
+    color: hsl(0, 0%, 83.3%);
+  }
+
+  @else if (string.quote($number) == "3") and $boolean {
+    color: hsl(0, 0%, 66.6%);
+  }
+
+  @else if (string.quote($number) == "4") and $boolean {
+    color: hsl(0, 0%, 50%);
+  }
+
+  @else if (string.quote($number) == "1") {
+    color: hsl(0, 0%, 50%);
+  }
+
+  @else if (string.quote($number) == "2")  {
+    color: hsl(0, 0%, 33.3%);
+  }
+
+  @else if (string.quote($number) == "3") {
+    color: hsl(0, 0%, 16.6%);
+  }
+
+  @else if (string.quote($number) == "4") {
+    color: hsl(0, 0%, 10%);
+  }
+
+  @else {
+    color: inherit;
+  }
+};

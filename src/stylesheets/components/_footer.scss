@@ -1,16 +1,21 @@
+@use '../abstracts/' as *;
+
 .footer {
     flex-shrink: 0;
   }
+
+.contact-icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2em 0;
+}
   
-  .contact-icons-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 2em 0;
-  }
-  
-  .contact-link {
-    fill: #ffffff;
-    height: 1em;
-    margin: 0 1em;
-  }
+.contact-link-icon {
+  height: 1em;
+  margin: 0 1em;
+}
+
+.contact-link {
+  @include colour-contrast("fill", contrast($bg-colour));
+}

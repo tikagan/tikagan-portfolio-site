@@ -2,6 +2,7 @@
 
 html {
     background-color: $bg-colour;
+    @include colour-contrast("colour", contrast($bg-colour));
 };
 
 .App {
@@ -20,7 +21,6 @@ font-family: 'Mukta-Regular';
   justify-content: center;
   align-content: flex-start;
   flex-grow: 1;
-  color: white;
   font-size: calc(10px + 2vmin);
 };
 

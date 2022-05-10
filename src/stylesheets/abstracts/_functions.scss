@@ -1,0 +1,12 @@
+@function contrast($colour) {
+    $color-brightness: round(calc((red($colour) * 299) + (green($colour) * 587) + (blue($colour) * 114) / 1000));
+    $light-color: round(calc((red(#ffffff) * 299) + (green(#ffffff) * 587) + (blue(#ffffff) * 114) / 1000));
+    
+    @if abs($color-brightness) < calc($light-color/2){
+        @return true;
+    }
+
+    @else {
+        @return false;
+    }
+};

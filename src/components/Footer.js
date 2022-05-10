@@ -7,13 +7,13 @@ function Footer() {
     return (
         <footer>
                 <nav className='contact-icons-container'>
-                <a href='https://github.com/tikagan'>
+                <a className="contact-link" href='https://github.com/tikagan'>
                     <GithubLogo />
                 </a>
-                <a href='https://www.linkedin.com/in/kritika-ganapathy-61893014b/'>
+                <a className="contact-link" href='https://www.linkedin.com/in/kritika-ganapathy-61893014b/'>
                     <LinkedinLogo />
                 </a>
-                <a href='mailto:ganapathy.kritika@gmail.com'>
+                <a className="contact-link" href='mailto:ganapathy.kritika@gmail.com'>
                     <Email />
                 </a>
                 </nav>
