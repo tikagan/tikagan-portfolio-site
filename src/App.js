@@ -2,6 +2,7 @@ import './stylesheets/App.scss';
 import Button from './components/Button'
 import Footer from './components/Footer'
 
+
 function App() {
   return (
     <div className='App'>
@@ -11,7 +12,9 @@ function App() {
         <p className='about-me-text'>
           I'm a full-stack developer with robust range of skills. I'm looking for new opportunities that take advantage of my resourcefulness, curiosity, and passion while offering mentorship, community, and challenging opportunities.
         </p>
-          <Button buttonText='Excellent'/>
+        <a href='./resume.pdf' target='_blank'>
+          <Button buttonText='Excellent'/> 
+        </a>
       </div>
       < Footer />
     </div>
