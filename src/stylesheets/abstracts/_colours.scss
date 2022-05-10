@@ -1,6 +1,9 @@
-$colours: (
-    text: (
-        white: hsl(100, 100%, 100%),
-        black: hsl(0, 0%, 0%),
-    )
-);
+@use 'sass:color';
+@use 'sass:list';
+@use 'sass:map';
+@use 'sass:math';
+
+$colours: (hsl(171, 56%, 29%), hsl(224, 47%, 26%), hsl(171, 56%, 69%), hsl(224, 47%, 66%));
+
+$bg-colour: list.nth($colours, math.random(list.length($colours)));
+$secondary-colour: color.adjust($bg-colour, $hue: 180deg);

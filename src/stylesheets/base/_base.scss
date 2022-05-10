@@ -1,6 +1,8 @@
+@use '../abstracts/' as *;
+
 html {
-    background-color: salmon;
-  }
+    background-color: $bg-colour;
+};
 
 .App {
 display: flex;
@@ -8,7 +10,7 @@ flex-direction: column;
 min-height: 100vh;
 width: 100vw;
 font-family: 'Mukta-Regular';
-}
+};
 
 .content-container {
   margin: 4em 4em 0 4em;
@@ -18,9 +20,9 @@ font-family: 'Mukta-Regular';
   justify-content: center;
   align-content: flex-start;
   flex-grow: 1;
-  color: var(--colour-text-white);
+  color: white;
   font-size: calc(10px + 2vmin);
-}
+};
 
 .kritika-portrait {
   width: 10em;
@@ -30,32 +32,33 @@ font-family: 'Mukta-Regular';
   display: block;
   border-radius: 10em;
   margin-right: 3em;
-}
+  box-shadow: 2px 2px 5px 2px rgb(0 0 0 / 70%);
+};
 
 .hi-im-kritika {
   margin-right: 2em;
   font-family: 'Gotu Regular';
-}
+};
 
 .about-me-text {
   margin: 1em 2em 1em 3em;
-}
+};
 
 @media (width < 930px) {
   .content-container {
     flex-flow: column;
-  }
+  };
 
   .kritika-portrait {
     margin: 0;
-  }
+  };
 
   .hi-im-kritika {
     text-align: center;
     margin: 0;
-  }
+  };
 
   .about-me-text {
     margin: 0 0 .75em 0;
-  }
+  };
 }
